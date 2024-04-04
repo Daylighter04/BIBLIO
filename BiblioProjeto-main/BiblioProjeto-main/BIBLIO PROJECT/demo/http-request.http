@@ -1,0 +1,28 @@
+###
+POST http://localhost:8080/livros
+Content-Type: application/json
+
+{
+  "id": 0,
+  "titulo": "",
+  "autor": "",
+  "anoPublicacao": 0,
+  "emprestado": false
+}
+
+###
+@id = variable value
+GET http://localhost:8080/livros/{{id}}
+
+###
+DELETE http://localhost:8080/livros/{{id}}
+
+###
+POST http://localhost:8080/livros/{{id}}/emprestar
+Content-Type: application/x-www-form-urlencoded
+
+###
+POST http://localhost:8080/livros/{{id}}/devolver
+Content-Type: application/x-www-form-urlencoded
+
+###
